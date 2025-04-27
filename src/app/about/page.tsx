@@ -2,7 +2,7 @@ export default function ABOUT() {
     return (
       <div className="">
         <main className="">
-          <>Hello Home</>
+          <>Hello About</>
         </main>
       </div>
     );
