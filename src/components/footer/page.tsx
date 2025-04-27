@@ -5,11 +5,13 @@ import MobileFooter from "./mobile_footer";
 const Footer = () => {
   return (
     <>
-      <div className="hidden md:block">
-        <DesktopFooter />
-      </div>
-      <div className="block md:hidden">
-        <MobileFooter />
+      <div id="Footer">
+        <div className="hidden md:block">
+          <DesktopFooter />
+        </div>
+        <div className="block md:hidden">
+          <MobileFooter />
+        </div>
       </div>
     </>
   );
