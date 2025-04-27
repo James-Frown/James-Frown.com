@@ -4,6 +4,7 @@ import "./globals.css";
 
 // Importing the components
 import Nav from "@/components/navigation/page";
+import Footer from "@/components/footer/page";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -62,7 +63,7 @@ export default function RootLayout({
       >
         <Nav />
         {children}
-        <footer>Hello Footer</footer>
+        <Footer />
       </body>
     </html>
   );
