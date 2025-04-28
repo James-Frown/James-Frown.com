@@ -10,10 +10,10 @@ import GitHub from "../../assets/footer/GitHub_Icon.svg";
 const MobileFooter = () => {
   return (
     <>
-      <footer className="flex flex-col justify-between gap-8 p-4 align-top">
-        <div className="flex flex-col gap-4">
+      <footer className="flex flex-col justify-between items-center gap-8 p-4 align-top pt-8">
+        <div className="flex flex-col gap-4 items-center text-center">
           <Link href="/">{"<James-Brown>"}</Link>
-          <div className="flex flex-col gap-4 text-sm w-14">
+          <div className="flex flex-row justify-center gap-4 text-sm w-14">
             <Link href="/about" className="hover:border-b-2">
               About
             </Link>
@@ -25,11 +25,11 @@ const MobileFooter = () => {
             </Link>
           </div>
         </div>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 items-center text-center">
           <Link href="#Footer" className="hover:border-b-2">
             Socials
           </Link>
-          <div className="text-sm flex flex-col gap-4">
+          <div className="text-sm flex flex-row justify-center gap-4">
             <a
               href="https://www.linkedin.com/in/james-brown-308233171"
               className="flex flex-row gap-2 items-center"
@@ -58,7 +58,7 @@ const MobileFooter = () => {
             </a>
           </div>
         </div>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 items-center text-center">
           <Link href="/contact" className="hover:border-b-2">
             Contact
           </Link>
@@ -73,6 +73,11 @@ const MobileFooter = () => {
               <a href="tel:+27788382692">(+27) 78 838 2692</a>
             </p>
           </div>
+        </div>
+        <div className="flex flex-row gap-4 items-center justify-center text-xs">
+          <p>
+            © {new Date().getFullYear()} James-Frown.com. All rights reserved.
+          </p>
         </div>
       </footer>
     </>
