@@ -1,6 +1,7 @@
+import CtaButton from "@/components/cta/cta_button";
 import ProfileImage1 from "../assets/images/ProfileImg_1.jpg";
 import Image from "next/image";
-import Link from "next/link";
+import CtaLink from "@/components/cta/cta_link";
 
 export default function HOME() {
   return (
@@ -28,19 +29,8 @@ export default function HOME() {
               </p>
             </div>
           </div>
-          <p className="text-blue-500 font-bold text-md p-2 opacity-0 md:opacity-100">
-            <Link
-              href="/about"
-              className="hover:border-b-blue-500 border-b-2 border-transparent transition duration-300 ease-in-out p-2"
-            >
-              Learn More
-            </Link>
-          </p>
-          <button className="bg-black text-white text-md p-2 rounded md:hidden">
-            <Link href="/about" className="p-2">
-              Learn More
-            </Link>
-          </button>
+          <CtaLink id="Landing_Link">Learn More</CtaLink>
+          <CtaButton id="Landing_Button">Learn More</CtaButton>
         </div>
       </main>
     </>
