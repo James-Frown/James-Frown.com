@@ -3,9 +3,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import LinkedIn from "../../assets/footer/LinkedIn_Icon.svg";
-import Behance from "../../assets/footer/Behance_Icon.svg";
-import GitHub from "../../assets/footer/GitHub_Icon.svg";
+import LinkedIn from "@/assets/footer/LinkedIn_Icon.svg";
+import Behance from "@/assets/footer/Behance_Icon.svg";
+import GitHub from "@/assets/footer/GitHub_Icon.svg";
 
 const MobileFooter = () => {
   return (
