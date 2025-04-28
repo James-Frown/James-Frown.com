@@ -12,7 +12,8 @@ const CtaButton: React.FC<CtaButtonProps> = ({ id, className, children }) => {
     <button
       id={id}
       className={`${
-        className || "bg-black text-white text-md p-2 rounded md:hidden"
+        className ||
+        "bg-black text-white text-md p-2 rounded md:hidden w-[50%] justify-center"
       }`}
     >
       <Link href="/about" className="p-2">

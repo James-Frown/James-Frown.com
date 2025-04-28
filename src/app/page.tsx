@@ -14,7 +14,7 @@ export default function HOME() {
           alt="Profile Image 1"
           className="rounded-[30px] object-cover p-4"
         />
-        <div className="flex flex-col items-left justify-left p-4 w-[320px]">
+        <div className="flex flex-col items-center md:items-start p-4 w-[320px]">
           <div className="text-center md:text-left p-4">
             <h1 className="text-black text-5xl font-extrabold">Welcome!</h1>
             <div className="justify-center md:justify-start">

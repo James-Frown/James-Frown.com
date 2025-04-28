@@ -13,7 +13,7 @@ const CtaLink: React.FC<CtaLinkProps> = ({ id, className, children }) => {
       id={id}
       className={`${
         className ||
-        "text-blue-500 font-bold text-md p-2 opacity-0 md:opacity-100"
+        "text-blue-500 font-bold text-md p-2 ml-2 hidden md:inline-block"
       }`}
     >
       <Link
