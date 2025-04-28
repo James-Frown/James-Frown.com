@@ -5,9 +5,15 @@ interface CtaButtonProps {
   id?: string;
   className?: string;
   children: React.ReactNode;
+  link: string;
 }
 
-const CtaButton: React.FC<CtaButtonProps> = ({ id, className, children }) => {
+const CtaButton: React.FC<CtaButtonProps> = ({
+  id,
+  className,
+  children,
+  link,
+}) => {
   return (
     <button
       id={id}
@@ -16,7 +22,7 @@ const CtaButton: React.FC<CtaButtonProps> = ({ id, className, children }) => {
         "bg-black text-white text-md p-2 rounded md:hidden w-[50%] justify-center"
       }`}
     >
-      <Link href="/about" className="p-2">
+      <Link href={`${link || "/"}`} className="p-2">
         {children}
       </Link>
     </button>

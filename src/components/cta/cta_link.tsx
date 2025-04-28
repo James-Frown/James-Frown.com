@@ -5,9 +5,10 @@ interface CtaLinkProps {
   id?: string;
   className?: string;
   children: React.ReactNode;
+  link: string;
 }
 
-const CtaLink: React.FC<CtaLinkProps> = ({ id, className, children }) => {
+const CtaLink: React.FC<CtaLinkProps> = ({ id, className, children, link }) => {
   return (
     <p
       id={id}
@@ -17,7 +18,7 @@ const CtaLink: React.FC<CtaLinkProps> = ({ id, className, children }) => {
       }`}
     >
       <Link
-        href="/about"
+        href={`/${link || ""}`}
         className="hover:border-b-blue-500 border-b-2 border-transparent transition duration-300 ease-in-out p-2"
       >
         {children}
