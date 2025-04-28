@@ -29,8 +29,12 @@ export default function HOME() {
               </p>
             </div>
           </div>
-          <CtaLink id="Landing_Link">Learn More</CtaLink>
-          <CtaButton id="Landing_Button">Learn More</CtaButton>
+          <CtaLink id="Landing_Link" link="about">
+            Learn More
+          </CtaLink>
+          <CtaButton id="Landing_Button" link="about">
+            Learn More
+          </CtaButton>
         </div>
       </main>
     </>
