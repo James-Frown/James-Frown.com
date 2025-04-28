@@ -13,7 +13,12 @@ export default function CTASection({
 }: CTASectionProps) {
   return (
     <>
-      <div id={`${id}`} className={`${className || ""}`}>
+      <div
+        id={`${id}`}
+        className={`${
+          className || ""
+        } flex flex-col items-center justify-center p-4`}
+      >
         {children}
       </div>
     </>
