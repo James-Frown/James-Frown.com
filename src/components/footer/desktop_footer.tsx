@@ -10,27 +10,27 @@ import GitHub from "@/assets/footer/GitHub_Icon.svg";
 const DesktopFooter = () => {
   return (
     <>
-      <footer className="flex flex-col justify-center gap-8 p-4 align-top">
-        <div className="flex flex-row justify-between gap-8 p-4 align-top">
-          <div className="flex flex-col gap-4 w-[15%]">
+      <footer className="flex flex-col justify-center gap-8 p-4 align-top w-screen">
+        <div className="flex flex-row justify-between p-4 align-top">
+          <div className="flex flex-col gap-4 w-[22%]">
             <Link href="/">{"<James-Brown>"}</Link>
-            <div className="flex flex-col gap-4 text-sm w-14">
+            <div className="flex flex-col gap-4 text-sm w-[75%]">
               <Link href="/about" className="hover:border-b-2">
-                About
+                Navigate To About
               </Link>
               <Link href="/skills" className="hover:border-b-2">
-                Skills
+                Navigate To Skills
               </Link>
               <Link href="/projects" className="hover:border-b-2">
-                Projects
+                Navigate To Projects
               </Link>
             </div>
           </div>
-          <div className="flex flex-col gap-4 w-[15%]">
+          <div className="flex flex-col gap-4 w-[22%]">
             <Link href="#Footer" className="hover:border-b-2">
               Socials
             </Link>
-            <div className="text-sm flex flex-col gap-4">
+            <div className="text-sm flex flex-col gap-4 w-[75%]">
               <a
                 href="https://www.linkedin.com/in/james-brown-308233171"
                 className="flex flex-row gap-2 items-center"
@@ -64,14 +64,18 @@ const DesktopFooter = () => {
               </a>
             </div>
           </div>
-          <div className="flex flex-col gap-4 w-[15%]">
+          <div className="flex flex-col gap-4 w-[22%]">
             <Link href="/contact" className="hover:border-b-2">
               Contact
             </Link>
             <div className="text-sm flex flex-col gap-2">
-              <p>Interested in collaborating? Let’s connect!</p>
-              <p>
-                <a href="mailto:2002jamesbrown@gmail.com">
+              <p>Interested in collaborating?</p>
+              <p> Let’s connect!</p>
+              <p className="break-words">
+                <a
+                  href="mailto:2002jamesbrown@gmail.com"
+                  className="break-words"
+                >
                   2002jamesbrown@gmail.com
                 </a>
               </p>

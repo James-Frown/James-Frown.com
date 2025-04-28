@@ -13,7 +13,7 @@ const MobileFooter = () => {
       <footer className="flex flex-col justify-between items-center gap-8 p-4 align-top pt-8">
         <div className="flex flex-col gap-4 items-center text-center">
           <Link href="/">{"<James-Brown>"}</Link>
-          <div className="flex flex-row justify-center gap-4 text-sm w-14">
+          <div className="flex flex-row justify-center gap-4 text-sm">
             <Link href="/about" className="hover:border-b-2">
               About
             </Link>
