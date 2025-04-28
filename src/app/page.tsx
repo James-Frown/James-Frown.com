@@ -13,9 +13,23 @@ export default function HOME() {
           alt="Profile Image"
           className="rounded-[30px] object-cover p-4"
         />
-        <div className="flex flex-col items-center justify-center p-4">
-          <h1 className="text-black text-4xl font-bold">Hello!</h1>
-          <p className="text-black text-lg">Welcome to my portfolio!</p>
+        <div className="flex flex-col items-left justify-left p-4 w-[320px]">
+          <div className="text-center md:text-left p-4">
+            <h1 className="text-black text-5xl font-extrabold">
+              Welcome!
+            </h1>
+            <div className="justify-center md:justify-start">
+              <p className="text-gray-700 text-lg">
+                My name is{" "}
+                <span className="font-bold text-blue-500">James Brown</span>,
+              </p>
+              <p className="text-gray-700 text-md md:text-sm">
+                I&apos;m a{" "}
+                <span className="font-bold text-blue-500">Designer</span> &{" "}
+                <span className="font-bold text-blue-500">Developer</span>,
+              </p>
+            </div>
+          </div>
           <p className="text-blue-500 font-bold text-md p-2 opacity-0 md:opacity-100">
             <Link
               href="/about"
