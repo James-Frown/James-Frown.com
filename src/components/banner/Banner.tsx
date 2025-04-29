@@ -8,6 +8,7 @@ interface BannerItemProps {
   link?: string;
   id: string;
   text: string;
+  png?: boolean;
 }
 
 const BannerItem: React.FC<BannerItemProps> = ({
@@ -17,6 +18,7 @@ const BannerItem: React.FC<BannerItemProps> = ({
   link,
   id,
   text,
+  png,
 }) => {
   return (
     <>
@@ -30,17 +32,28 @@ const BannerItem: React.FC<BannerItemProps> = ({
         }
         id={id}
       >
-        {imageSrc && (
-          <Image
-            src={imageSrc}
-            alt={altText || "Banner Image"}
-            className={
-              "rounded-[10px] w-[80px] h-[80px] sm:w-[120px] sm:h-[120px] object-cover"
-            }
-            width={200}
-            height={200}
-          />
-        )}
+        {imageSrc &&
+          (png ? (
+            <Image
+              src={imageSrc}
+              alt={altText || "Banner PNG Image"}
+              className={
+                "rounded-[10px] w-[80px] h-[80px] sm:w-[120px] sm:h-[120px] object-contain bg-amber-50 p-2"
+              }
+              width={200}
+              height={200}
+            />
+          ) : (
+            <Image
+              src={imageSrc}
+              alt={altText || "Banner Image"}
+              className={
+                "rounded-[10px] w-[80px] h-[80px] sm:w-[120px] sm:h-[120px] object-cover p-2"
+              }
+              width={200}
+              height={200}
+            />
+          ))}
         <p className="text-center">{text}</p>
       </a>
     </>
