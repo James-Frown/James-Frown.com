@@ -1,9 +1,9 @@
 "use client";
 
 import Image1 from "../../assets/interests/Responsive_Icon.svg";
-import Image2 from "../../assets/interests/Responsive_Icon.svg";
-import Image3 from "../../assets/interests/Responsive_Icon.svg";
-import Image4 from "../../assets/interests/Responsive_Icon.svg";
+import Image2 from "../../assets/interests/WebDesign_Icon.svg";
+import Image3 from "../../assets/interests/backend-coding.png";
+import Image4 from "../../assets/interests/web-design.png";
 
 import BannerItem from "@/components/banner/Banner";
 
@@ -31,6 +31,7 @@ export default function Section_2() {
           imageSrc={Image3}
           altText="Profile Image 3"
           link="/"
+          png
         />
         <BannerItem
           id="Banner_5"
@@ -38,6 +39,7 @@ export default function Section_2() {
           imageSrc={Image4}
           altText="Profile Image 3"
           link="/"
+          png
         />
       </div>
     </>
